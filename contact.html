@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact </title>
+    <title>Contact | My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav class="navbar">
-        <div class="logo">AA</div>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo">
+        </div>
 
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -20,58 +23,69 @@
         </ul>
     </nav>
 
-    <section class="contact-hero">
-        <p>05 / GET IN TOUCH</p>
-        <h1>Let's Connect</h1>
-        <p>
-            Have a question, an idea or an opportunity?
-            I'd love to hear from you.
-        </p>
-    </section>
+    <main class="contact-page">
 
-    <section class="contact-section">
+        <section class="contact-intro">
+            <p class="contact-label">05 / GET IN TOUCH</p>
 
-        <div class="contact-info">
-            <p>CONTACT ME</p>
-            <h2>Let's start a conversation.</h2>
-            <p>
-                I'm always open to learning, connecting
-                with others and exploring new opportunities.
+            <h1>Let's Start a Conversation.</h1>
+
+            <p class="contact-description">
+                Have a project in mind, a question, or an opportunity
+                to collaborate? I'd be happy to hear from you.
             </p>
+        </section>
 
-            <div class="contact-detail">
-                <h3>Email</h3>
-                <p>janedoe@gmail.com</p>
+        <section class="contact-content">
+
+            <div class="contact-heading">
+                <h2>Contact Information</h2>
+                <p>Feel free to reach out through any of the channels below.</p>
             </div>
 
-            <div class="contact-detail">
-                <h3>Location</h3>
-                <p>Lagos</p>
+            <div class="contact-grid">
+
+                <a href="mailto:YOUR_EMAIL@example.com"
+                   class="contact-card">
+
+                    <span class="contact-icon">✉</span>
+                    <h3>Email</h3>
+                    <p>Send me an email</p>
+                    <span class="contact-link">Get in touch ↗</span>
+
+                </a>
+
+                <a href="https://github.com/ademolab788"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-card">
+
+                    <span class="contact-icon">⌘</span>
+                    <h3>GitHub</h3>
+                    <p>Explore my projects and work</p>
+                    <span class="contact-link">View GitHub ↗</span>
+
+                </a>
+
             </div>
-        </div>
 
-        <div class="contact-message">
-            <h2>Thank you for visiting!</h2>
-            <p>
-                Every connection is an opportunity to learn,
-                share ideas and grow.
-            </p>
-        </div>
+            <div class="contact-note">
+                <h2>Have something in mind?</h2>
 
-    </section>
+                <p>
+                    I'm open to discussing website projects,
+                    creative ideas and opportunities to learn and grow.
+                </p>
 
-    <section class="form-section">
-        <h2>Send me a message</h2>
-        <form action="https://formsubmit.co/ademolab788@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label> 
-            <input type="text" name="name" placeholder="Your Name" required> <br> <br>
-            <label for="email">Email:</label>
-            <input type="email" name="email" placeholder="Your Email" required> <br> <br>
-            <label for="message">Message:</label>
-            <textarea name="message" placeholder="Your Message" required></textarea> <br> <br>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+                <a href="mailto:YOUR_EMAIL@example.com"
+                   class="contact-button">
+                    Send an Email ↗
+                </a>
+            </div>
+
+        </section>
+
+    </main>
 
     <footer class="footer">
         <div class="footer-logo">
@@ -87,6 +101,8 @@
             <p>Made with care ❤️</p>
         </div>
     </footer>
+
+   
 
 </body>
 </html>
